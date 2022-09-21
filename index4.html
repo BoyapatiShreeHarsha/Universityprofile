@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHB-University|Best in the town</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/5d19a2262d.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <div id="logo">
+               <!-- <a href="index.html"><img src="img/logo.png" alt="SHB_university"></a> -->
+               <img src="img/logo.png" alt="SHB-University">
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+                <!-- icons are not visible doubt-3    -->
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index2.html">ABOUT</a></li>
+                    <li><a href="index3.html">COURSE</a></li>
+                    <li><a href="index4.html">BLOG</a></li>
+                    <li><a href="index5.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmemu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>OUR CERTIFICATES & ONLINE PROGRAMS FOR 2022</h1>
+        </div>
+    </section>
+
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="./img/certificate.jpg" alt="certificate">
+                <h2>OUR CERTIFICATES & ONLINE PROGRAMS FOR 2022</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quia distinctio aliquid non consectetur reprehenderit, ab nobis enim facere earum est?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate sequi reiciendis animi odio! Deserunt quam quia doloremque excepturi! Reprehenderit saepe soluta illum et in vero veritatis! Iste voluptate animi consequatur sint nulla, soluta reiciendis ab labore laborum, aut expedita facere eveniet!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam cupiditate voluptatibus, vitae enim quisquam saepe repudiandae dolorem deleniti sed dolorum vero rerum expedita minus animi neque aliquam distinctio laboriosam quos similique!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ratione eos dolores.</p>
+
+                <div class="comment-box">
+                    <h2>Leave a comment</h2>
+                    <form  class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea  cols="2" rows="10" placeholder="Your Comment"></textarea>
+                        <button class="hero-btn" type="submit"><a href="">POST COMMENT</a></button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3> Online Programs </h3>
+                
+
+                    <div>
+                        <span>Computer Secience and engineering</span>
+                        <span>62</span>
+                    </div>
+                    <div>
+                        <span>Electronics and <br>communication</span>
+                        <span>31</span>
+                    </div>
+                    <div>
+                        <span>Civil Engineering</span>
+                        <span>31</span>
+                    </div>
+                    <div>
+                        <span>Mechanical Engineering</span>
+                        <span>31</span>
+                    </div>
+                    <div>
+                        <span>Chemical engineering</span>
+                        <span>31</span>
+                    </div>
+                </div>
+            
+        </div>
+    </section>
+
+    <!-- ----------Footer-------- -->
+    <section class="footer">
+        <h1>About Us</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eligendi sit assumenda optio similique aspernatur accusamus veritatis ducimus, deserunt aliquam vel debitis non blanditiis?</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-solid fa-at"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        Made by <i class="fa-solid fa-copyright"></i>  Boyapati Shree Harsha
+    </section>
+<script>
+    var navLinks= document.getElementById("navLinks");
+    function showmemu(){
+        navLinks.style.right="0";
+    }
+    function hidemenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+</body>
+</html>

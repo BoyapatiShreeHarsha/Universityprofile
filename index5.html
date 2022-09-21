@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHB-University|Best in the town</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/5d19a2262d.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <div id="logo">
+               <!-- <a href="index.html"><img src="img/logo.png" alt="SHB_university"></a> -->
+               <img src="img/logo.png" alt="SHB-University">
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+                <!-- icons are not visible doubt-3    -->
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index2.html">ABOUT</a></li>
+                    <li><a href="index3.html">COURSE</a></li>
+                    <li><a href="index4.html">BLOG</a></li>
+                    <li><a href="index5.html">CONTACT</a></li>
+                </ul>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmemu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Contact Us</h1>
+        </div>
+    </section>
+
+    <!-- -------------Contact Us----------- -->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.931248228018!2d93.9104914149888!3d24.832024684067378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37492882674dc4bf%3A0x9d4548feb7e9541d!2sNational%20Institute%20of%20Technology%2C%20Manipur!5e0!3m2!1sen!2sin!4v1658839844623!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Langol Road, NIT Manipur</h5>
+                        <p>Imphal, Manipur,India</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>
+                        <h5>Tall to us</h5>
+                        <p>+91 9214447595</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>
+                        <h5>Email Us</h5>
+                        <p>Landline :- 45321789</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <h2>Admission Form</h2>
+                <form class="form" action="mailto:boyapatishreeharsha@gmail.com">
+                    <label id="namev">
+
+                        <input type="text" name="namev" placeholder="Enter Your Name" required>
+                    </label>
+                    <label id="emailv">
+
+                        <input type="text" name="emailv" placeholder="Enter Your Email" required>
+                    </label>
+                    <label id="subjectv">
+
+                        <input type="text" name="subjectv" placeholder="Enter Your Subject" required>
+                    </label>
+                    <label id="commentv">
+
+                        <textarea name="commentv" rows="8" placeholder="Your Discription"></textarea>
+                    </label>
+                    <!-- <button type="submit" class="hero-btn"><input type="submit" value="Submit Now"></button> -->
+                    <button class="hero-btn" type="submit"><a href="">Submit Now</a></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+   
+    
+
+    <!-- ----------Footer-------- -->
+    <section class="footer">
+        <h1>About Us</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eligendi sit assumenda optio similique aspernatur accusamus veritatis ducimus, deserunt aliquam vel debitis non blanditiis?</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-solid fa-at"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        Made by <i class="fa-solid fa-copyright"></i>  Boyapati Shree Harsha
+    </section>
+<script>
+    var navLinks= document.getElementById("navLinks");
+    function showmemu(){
+        navLinks.style.right="0";
+    }
+    function hidemenu(){
+        navLinks.style.right="-200px";
+    }
+    const wapper=document.querySelector('.contact-col');
+    const form=wapper.querySelector('.form');
+    const submit=form[0].querySelector('.hero-btn');
+
+    function getDataForm(e){
+        e.preventDefault();
+        var formData= new FormData(form[0]);
+        alert( formData.get('namev')+ '-' + formData.get('emailv') +'-'+formData.get('subjectv')+'-'+formData.get('commentv'));
+    }
+    document.addEventListener('DOMContentLoaded',function() {
+        submit.addEventListener('click',getDataForm,false);
+        
+    },false);
+</script>
+
+</body>
+</html>
